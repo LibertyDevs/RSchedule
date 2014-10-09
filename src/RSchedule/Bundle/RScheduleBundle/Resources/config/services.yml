@@ -1,0 +1,10 @@
+#parameters:
+#    repository_registry.class: RSchedule\Bundle\RScheduleBundle\Entity\RepositoryRegistry
+#services:
+#
+#    repository_registry:
+#        class: "%repository_registry.class%"
+#        arguments: [@service_id, "plain_value", %parameter%]
+##    r_schedule.example:
+##        class: RSchedule\Bundle\RScheduleBundle\Example
+##        arguments: [@service_id, "plain_value", %parameter%]

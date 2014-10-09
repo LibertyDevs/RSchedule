@@ -1,0 +1,4 @@
+r_schedule:
+    resource: "@RScheduleBundle/Resources/config/routing.yml"
+    prefix:   /
+

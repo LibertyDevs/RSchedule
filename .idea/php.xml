@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpProjectSharedConfiguration" php_language_level="5.5.0" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings />
+      <phpunit_by_interpreter interpreter_id="80e40b6f-b81d-4b39-8f42-012b30df56f8" interpreter_name="Remote PHP 5.5" load_method="CUSTOM_LOADER" bootstrap_file_path="/vagrant_data/RSchedule/app/autoload.php" configuration_file_path="/vagrant_data/RSchedule/app/phpunit.xml.dist" custom_loader_path="/vagrant_data/RSchedule/vendor/autoload.php" phpunit_phar_path="" use_bootstrap_file="true" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+</project>
+

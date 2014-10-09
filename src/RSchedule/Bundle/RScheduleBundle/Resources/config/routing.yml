@@ -1,0 +1,3 @@
+r_schedule_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: RScheduleBundle:Default:index }

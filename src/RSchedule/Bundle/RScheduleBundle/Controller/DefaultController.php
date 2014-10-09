@@ -1,0 +1,13 @@
+<?php
+
+namespace RSchedule\Bundle\RScheduleBundle\Controller;
+
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+
+class DefaultController extends Controller
+{
+    public function indexAction($name)
+    {
+        return $this->render('RScheduleBundle:Default:index.html.twig', array('name' => $name));
+    }
+}
