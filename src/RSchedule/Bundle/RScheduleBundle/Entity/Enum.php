@@ -18,6 +18,4 @@ abstract class Enum
 
     abstract public function valueOf();
 
-    abstract public function __toString();
-
 }

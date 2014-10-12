@@ -7,11 +7,11 @@ use Doctrine\ORM\EntityRepository;
 /**
  * UserRepository
  */
-class UserRepository extends EntityRepository
+class UserRepository extends EntityRepository implements IUserRepository
 {
 
-    public function getUser($id)
+    public function findByUserId($user_id)
     {
-        return $this->find('1');
+        return $this->find($user_id);
     }
 }

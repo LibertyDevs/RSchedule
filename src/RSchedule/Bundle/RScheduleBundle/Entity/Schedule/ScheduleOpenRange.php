@@ -50,12 +50,4 @@ final class ScheduleOpenRange extends Enum
         return $this->open_range;
     }
 
-
-    /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->open_range;
-    }
 }

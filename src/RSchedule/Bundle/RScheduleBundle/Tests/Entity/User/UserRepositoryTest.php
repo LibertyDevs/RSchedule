@@ -21,7 +21,7 @@ class UserRepositoryTest extends RScheduleBundleTestCase
     {
 
         $userRepository = $this->_getObject();
-        $user = $userRepository->getUser('1');
+        $user = $userRepository->findByUserId(1);
         var_dump($user);
 
     }
