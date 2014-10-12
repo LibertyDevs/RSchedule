@@ -36,12 +36,4 @@ final class GroupGenre extends Enum
     }
 
 
-    /**
-     * @return string
-     */
-    public function __toString()
-    {
-        return (string)$this->genre;
-    }
-
 }

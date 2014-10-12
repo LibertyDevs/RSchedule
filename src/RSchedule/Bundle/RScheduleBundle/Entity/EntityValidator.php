@@ -5,7 +5,7 @@ namespace RSchedule\Bundle\RScheduleBundle\Entity;
 
 trait EntityValidator
 {
-    protected function createMessage($value, $message)
+    private function createMessage($value, $message)
     {
         return $message . ":" . $value;
     }

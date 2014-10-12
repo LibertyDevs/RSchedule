@@ -3,6 +3,8 @@
 namespace RSchedule\Bundle\RScheduleBundle\Tests\Entity\User;
 
 use Doctrine\ORM\EntityRepository;
+use RSchedule\Bundle\RScheduleBundle\Entity\User\User;
+use RSchedule\Bundle\RScheduleBundle\Entity\User\UserAuthority;
 use RSchedule\Bundle\RScheduleBundle\Tests\RScheduleBundleTestCase;
 
 /**
@@ -17,12 +19,17 @@ class UserRepositoryTest extends RScheduleBundleTestCase
         return $this->getBundle()->getRepositoryRegistry()->getUserRepository();
     }
 
-    public function testGetUser()
+    public function testSave()
     {
+        $user = new User(
+            "name",
+            "password",
+            "mailAddress",
+            new UserAuthority(UserAuthority::ADMIN)
+        );
 
         $userRepository = $this->_getObject();
-        $user = $userRepository->findByUserId(1);
-        var_dump($user);
+        $newUser = $userRepository->save($user);
 
     }
 

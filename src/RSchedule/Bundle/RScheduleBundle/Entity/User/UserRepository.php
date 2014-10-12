@@ -14,4 +14,11 @@ class UserRepository extends EntityRepository implements IUserRepository
     {
         return $this->find($user_id);
     }
+
+    public function save(User $newUser)
+    {
+        $this->getEntityManager()->persist($newUser);
+        $this->getEntityManager()->flush();
+        return $newUser;
+    }
 }

@@ -39,6 +39,35 @@ class Entity
      */
     protected $updated_at;
 
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setCreatedAt(\DateTime $dateTime)
+    {
+        $this->created_at = $dateTime;
+        return $this;
+    }
+
+    public function setUpdatedAt(\DateTime $dateTime)
+    {
+        $this->updated_at = $dateTime;
+        return $this;
+
+    }
+
+    public function getCreatedAt()
+    {
+        return $this->created_at;
+
+    }
+
+    public function getUpdatedAt()
+    {
+        return $this->updated_at;
+    }
+
     /**
      * 永続化時の前処理
      *
@@ -47,6 +76,10 @@ class Entity
      */
     public function prePersist()
     {
+        if (!$this->getCreatedAt() instanceof \DateTime) {
+            $this->setCreatedAt(new \DateTime("now"));
+        }
+
         $this->setUpdatedAt(new \DateTime("now"));
     }
 
